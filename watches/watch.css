@@ -1,0 +1,272 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#top-banner {
+    background: rgb(179, 112, 243);
+    color: #fff;
+    height: 2rem;
+}
+
+#top-banner p {
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 0.4rem;
+}
+
+.header-container .user-section .top-user-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.header-container .top-user-section .logo {
+    height: 3rem;
+    width: 3rem;
+}
+
+.header-container .top-user-section .search {
+    height: 2.5rem;
+    width: 19rem;
+    border: 2px solid rgb(50, 5, 92);
+    /* border-radius: 1rem; */
+    border-bottom-left-radius: 1rem;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.go-btn {
+    display: inline-block;
+    background-color: rgb(105, 90, 119);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border-top-right-radius: 1rem;
+    text-decoration: none;
+    margin: 10px 0; 
+    height: 2.5rem;
+    width: 3rem;
+    font-size: 1rem;
+}
+
+.header-container .top-user-section .user-links {
+    display: inline-block;
+}
+
+.header-container .top-user-section .user-links li {
+    display: inline-block;
+    padding: 0 0.8rem;
+}
+
+.header-container .top-user-section .user-links li:hover {
+    background-color: rgb(218, 211, 226);
+    border-radius: 50%;
+}
+
+.header-container .top-user-section .user-links a {
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-size: 1.1rem;
+}
+
+
+.header-container .user-section .bottom-user-section {
+    background: rgb(210, 197, 222);
+    padding: 0 4rem;
+    height: 1rem;
+}
+
+
+.toggle-area {
+    display: flex;
+    align-items: center;
+}
+
+.toggle {
+    position: relative;
+    height: 1.5rem;
+    width: 2.5rem;
+    background-color: rgb(244, 168, 168);
+    background-color: gray;
+    border-radius: 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.toggle input[type="checkbox"] {
+    display: none; /* Hide the actual checkbox */
+}
+
+.slider {
+    content: "";
+    position: absolute;
+    height: 1rem;
+    width: 1rem;
+    background: rgb(62, 60, 60);
+    border-radius: 50%;
+    top: 50%;
+    left: 0.3rem;
+    transform: translateY(-50%);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #484747; /* Dark background color */
+    /* color: #fff; */
+}
+
+.dark-mode .slider {
+    left: calc(100% - 1.3rem);
+    background-color: #fff; /* White circle in dark mode */
+}
+
+@media (max-width: 768px) {
+    .header-container .user-section .top-user-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .header-container .top-user-section .search {
+        width: 100%;
+        max-width: 9rem; /* Adjust the max-width as needed */
+    }
+
+    .header-container .top-user-section .user-links {
+        margin-top: 1rem;
+    }
+
+    .header-container .top-user-section .user-links li {
+        margin: 0.5rem;
+    }
+
+    .header-container .user-section .bottom-user-section,
+    .brands {
+        padding: 1rem;
+        margin: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-container .user-section .bottom-user-section li,
+    .brands .brands-details {
+        display: block;
+        padding: 0.5rem 0;
+        align-items: center;
+    }
+}
+
+/* End of Header */
+
+
+.designs {
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    margin: 1rem 4rem;
+    position: relative;
+}
+
+.watch-types {
+    display: inline-block; /* Display items horizontally */
+    vertical-align: top; /* Align items at the top */
+    margin-right: 1rem; /* Add some spacing between items (adjust as needed) */
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.watch-types img {
+    width: 14rem;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: 0.7rem;
+    margin: 1rem;
+    transform: 0.2s ease;
+}
+
+.design-info {
+    padding: 1rem 2rem;
+}
+
+.design-info h4,
+.design-info p {
+    font-size: 1.2rem;
+    color: rgb(71, 69, 69);
+}
+
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background: rgb(199, 158, 237);
+}
+
+.subscribe {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.subscribe h3,
+.about h3,
+.customer-service h3 {
+    font-size: 1.3rem;
+    color: rgb(58, 42, 72);
+    margin: 0.5rem 0;
+}
+
+.subscribe p,
+.about p,
+.customer-service p {
+    font-size: 1.1rem;
+    color: rgb(51, 45, 45);
+    padding: 0.2rem 0;
+}
+
+.enter-box {
+    height: 2rem;
+    width: 20rem;
+    margin-top: 0.7rem;
+    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    position: relative;
+}
+
+.sign-btn{
+    display: inline-block;
+    background-color: rgb(105, 90, 119);
+    color: white;
+    padding: 0.5rem 0.7rem;
+    border-top-right-radius: 0.5rem;
+    text-decoration: none;
+    margin: 10px 0; 
+}
+
+.connect {
+    margin-top: 0.8rem;
+}
+.connect li {
+    display: inline-block;
+    padding: 0 0.8rem;
+}
+
+.connect a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgb(60, 55, 55);
+}
+
+.customer-service {
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+}
