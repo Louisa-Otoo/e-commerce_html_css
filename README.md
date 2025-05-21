@@ -19,19 +19,6 @@ A static frontend prototype for an e-commerce website built entirely with **HTML
 
 ---
 
-## 📁 Project Structure
-
-ecommerce-html-css/
-├── index.html
-├── products.html
-├── css/
-│ └── styles.css
-├── assets/
-│ └── images/
-└── README.md
-
----
-
 ## 🚀 Getting Started
 
 1. Clone the repository:
